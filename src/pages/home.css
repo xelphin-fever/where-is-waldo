@@ -1,0 +1,29 @@
+
+
+
+.page-home{
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.levelBar {
+  display: flex;
+  flex-direction: column;
+}
+
+.levelBar-title {
+  font-size: 45px;
+}
+
+.levelBar-images{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.levelBar-images img{
+  height: 300px;
+  margin: 10px 15px;
+}
