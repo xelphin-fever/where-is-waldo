@@ -2,7 +2,8 @@ import './App.css';
 import NavBar from './components/NavBar';
 import React, { useState, useEffect} from 'react';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import Home from './pages/Home'
+import Home from './pages/Home';
+import Game from './pages/Game';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <NavBar username="Anonymous"/>
         <Switch> 
           <Route exact path='/' component={Home}/>
+          <Route exact path='/game/:id' component={() => <Game/>}/>
         </Switch>
       </Router>
     </div>

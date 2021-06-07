@@ -1,0 +1,15 @@
+{
+  "waldo": {
+    "0": "/static/media/waldo-0.16820e8e.jpg",
+    "1": "/static/media/waldo-1.3f1472be.jpg",
+    "2": "/static/media/waldo-2.5c12dff6.jpg",
+    "3": "/static/media/waldo-3.08c0df13.jpg",
+    "4": "/static/media/waldo-4.ea746537.jpg"
+  },
+  "pokemon" : {
+    "0": "/static/media/pokemon-0.fa9ae241.jpg"
+  },
+  "ghibli": {
+    "0": "/static/media/ghibli-0.58f2fa63.jpg"
+  }
+}

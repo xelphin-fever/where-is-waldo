@@ -42,3 +42,10 @@
   border: 1px solid rgb(110, 110, 110);
   font-size: 20px;
 }
+
+
+.game-image{
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
