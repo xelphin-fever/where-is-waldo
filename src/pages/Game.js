@@ -10,10 +10,16 @@ const Game = (props) => {
   const imgSrc = imageData[type][level];
 
 
+  const sendCoordinates = (event) => {
+    let xCoordinate = event.offsetX;
+    let yCoordinate = event.offsetY;
+    console.log(`x: ${xCoordinate} y: ${yCoordinate}`);
+  }
+
 
   return (
     <div  className="page-game">
-      <img className="game-image" src={imgSrc} alt="game" />
+      <img className="game-image" src={imgSrc} alt="game" onClick={sendCoordinates}/>
     </div>
   );
 }
