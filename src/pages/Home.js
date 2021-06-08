@@ -16,6 +16,7 @@ const Home = (props) => {
   const pokemonImages = [pokemon0];
   const ghibliImages = [ghibli0];
 
+
   return (
     <div  className="page-home">
       <LevelBar title="waldo" images={waldoImages} />
@@ -25,4 +26,6 @@ const Home = (props) => {
   );
 }
 
+
+// 407 30 120 543
 export default Home;

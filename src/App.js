@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Home from './pages/Home';
 import Game from './pages/Game';
 
+// TODO: Sign in as Guest (Anonymous) by default
 
 function App() {
   return (
