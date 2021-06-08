@@ -12,7 +12,15 @@ const SignIn = (props) => {
   const makeGuest = () => {
     if (!firebase.auth().currentUser.isAnonymous){
       firebase.auth().signOut();
-      // App.js listens and makes guest
+      console.log("not logged in -> Sign in as Guest (from SignIn)");
+      const promise = firebase.auth().signInAnonymously();
+      promise.then(function(result) {
+        console.log('made a user!');
+        return result.user.updateProfile({
+          displayName: "Guest",
+        })
+      })
+      promise.catch((e) => (console.log(e)));
     }
   }
 

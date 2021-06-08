@@ -6,7 +6,7 @@ import firebase from '../firebase'
 const NavBar = (props) => {
 
   const [username, setUsername] = useState("Guest");
-  const [showSignIn, setShowSignIn] = useState(true);
+  const [showSignIn, setShowSignIn] = useState(false);
 
   const toggleSignIn = () => {
     setShowSignIn(!showSignIn)
@@ -14,13 +14,7 @@ const NavBar = (props) => {
 
   firebase.auth().onAuthStateChanged((fireBaseUser) => {
     if (fireBaseUser) {
-      console.log('is anonymous? ', firebase.auth().currentUser.isAnonymous);
-      if (firebase.auth().currentUser.isAnonymous){
-        setUsername("Guest")
-      } else {
-        console.log('setting username to: ', firebase.auth().currentUser.displayName)
-        setUsername(firebase.auth().currentUser.displayName);
-      }
+      setUsername(firebase.auth().currentUser.displayName);
     }
   });
 

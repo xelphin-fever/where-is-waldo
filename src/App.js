@@ -6,30 +6,29 @@ import Home from './pages/Home';
 import Game from './pages/Game';
 import firebase from './firebase';
 
-// TODO: Sign in as Guest (Anonymous) by default
-
-// check if not signed in true
-// sign in as guest
-
-
-// change sign in settings: continue as guest || sign up || log in
 
 function App() {
 
-  firebase.auth().onAuthStateChanged((fireBaseUser) => {
-    if (fireBaseUser) {
-      console.log("Current User: ", firebase.auth().currentUser);
-    } else {
-      console.log("not logged in -> Sign in as Guest");
-      const promise = firebase.auth().signInAnonymously();
-      promise.then(function(result) {
-        return result.user.updateProfile({
-          displayName: "Guest",
+
+  useEffect(() => {
+    console.log('my user at start: ',firebase.auth().currentUser);
+    setTimeout( () => {
+      console.log('my user at start -2: ',firebase.auth().currentUser);
+      if (!firebase.auth().currentUser){
+        console.log("not logged in -> Sign in as Guest");
+        const promise = firebase.auth().signInAnonymously();
+        promise.then(function(result) {
+          console.log('made a user!');
+          return result.user.updateProfile({
+            displayName: "Guest",
+          })
         })
-      })
-      promise.catch((e) => (console.log(e)));
-    }
-  });
+        promise.catch((e) => (console.log(e)));
+      } else {
+        console.log('I am already logged in');
+      }
+    } , 1000)
+  }, [])
 
 
   return (
