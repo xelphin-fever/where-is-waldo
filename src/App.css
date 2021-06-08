@@ -48,3 +48,48 @@
   font-size: 20px;
 }
 
+
+
+.sign-in{
+  border: 1px solid rgb(110, 110, 110);
+  background-color: rgb(248, 248, 248);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: absolute;
+  top: 300px;
+  left: calc(50% - 145px);
+
+}
+
+.sign-in-button{
+  border: 1px solid rgb(110, 110, 110);
+  background-color: rgb(248, 248, 248);
+  padding: 10px;
+  width: 250px;
+  font-size: 30px;
+  margin: 10px 0;
+}
+.sign-in input{
+  background-color: transparent;
+  padding: 10px;
+  width: 250px;
+  font-size: 30px;
+}
+.signIn-sideBar{
+  position: absolute;
+  left: -55px;
+  top: -55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signIn-special{
+  border: 1px solid rgb(110, 110, 110);
+  font-size: 25px;
+  width: fit-content;
+  padding: 5px 13px;
+  border-radius: 50%;
+}
+
+

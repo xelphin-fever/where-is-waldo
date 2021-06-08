@@ -26,6 +26,4 @@ const Home = (props) => {
   );
 }
 
-
-// 407 30 120 543
 export default Home;
