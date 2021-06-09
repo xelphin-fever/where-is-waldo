@@ -73,7 +73,21 @@ const Game = (props) => {
     console.log('counter: ', count);
     if (counter === 0){
       setCounter(count);
-      // Update Score to LeaderBoard
+      // UPDATE SCORE TO LEADERBOARD
+      let firestore = firebase.firestore();
+      firestore
+      .collection("scores").doc(match).collection("playerScores")
+      .add({
+        username: firebase.auth().currentUser.displayName,
+        time: count,
+        uid: firebase.auth().currentUser.uid,
+      })
+      .then((docRef) => {
+        console.log("High score saved ", docRef);
+      })
+      .catch(function (error) {
+        console.error("Error writing in score", error);
+      });
     }
   }
 

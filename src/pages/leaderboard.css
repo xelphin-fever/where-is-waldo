@@ -1,0 +1,46 @@
+.page-leaderboard{
+  padding: 50px;
+}
+
+.leaderboard-types button{
+  border: 1px solid rgb(110, 110, 110);
+  color: rgb(110, 110, 110);
+  font-size: 20px;
+  padding: 5px 20px;
+  border-radius: 10%;
+  margin: 0 5px;
+}
+
+.leaderboard-levels{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.leaderboard-levels img{
+  height: 200px;
+}
+
+.leaderboard-board{
+  width: 80%;
+  display: block;
+  margin: 20px auto;
+}
+.leaderboard-board table{
+  width: 100%;
+  border-spacing: 12px;
+}
+
+.leaderboard-board th{
+  font-size: 30px;
+}
+.leaderboard-board td{
+  font-size: 25px;
+}
+.leaderboad-left{
+  float: left;
+}
+.leaderboad-right{
+  float: right;
+}
