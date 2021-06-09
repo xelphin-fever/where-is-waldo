@@ -1,15 +1,15 @@
 import React, { useState, useEffect} from 'react';
-import imageData from '../data/imgSrc.json';
+import {getAllImages} from '../helper/findImage';
 import './leaderboard.css';
 import firebase from '../firebase';
 
 const LeaderBoard = (props) => {
 
-  const typeNames = Object.keys(imageData);
+  const typeNames = Object.keys(getAllImages());
 
   const [currType, setCurrType] = useState("waldo");
   const [currLevel, setCurrLevel] = useState("0");
-  const [typeLevels, setTypeLevels] = useState(imageData["waldo"]);
+  const [typeLevels, setTypeLevels] = useState(getAllImages()["waldo"]);
   const [images, setImages] = useState([]);
   //
   const [scores, setScores] = useState([]);
@@ -75,7 +75,7 @@ const LeaderBoard = (props) => {
             return <button 
               key={name} 
               data-type={name} 
-              onClick={() => {setCurrType(name); setCurrLevel("0"); setTypeLevels(imageData[name])}}>
+              onClick={() => {setCurrType(name); setCurrLevel("0"); setTypeLevels(getAllImages()[name])}}>
                 {name}
             </button>
           })
