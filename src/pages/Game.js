@@ -26,7 +26,6 @@ const Game = (props) => {
   useEffect(()=> {
     let firestore = firebase.firestore();
     firestore.collection("gameCoordinates").doc(match).get().then((myDoc) => {
-        console.log("my doc: ", myDoc.data());
         setCharCoord(myDoc.data());
         setChar(Object.keys(myDoc.data()));
         setHasInit(true);
@@ -38,7 +37,6 @@ const Game = (props) => {
 
   // CHECK FOR GAME OVER
   useEffect(() => {
-    console.log('char: ', char);
     if (char.length === 0 && hasInit === true){
       setGameOver(true);
     }
@@ -57,10 +55,19 @@ const Game = (props) => {
     setCurrPgCoord([event.pageX, event.pageY]);
   }
 
+  //COMPARE CLICK AND CHARACTER LOCATION
+  const compareLocation = (myCharCoord) => {
+    if (type==="waldo"){
+      return Math.abs(currImgCoord[0]-myCharCoord[0])<3.5 && Math.abs(currImgCoord[1]-myCharCoord[1])<3.5;
+    }  else {
+      return Math.abs(currImgCoord[0]-myCharCoord[0])<4 && Math.abs(currImgCoord[1]-myCharCoord[1])<4;
+    }
+  }
+
   // CHECK FOR CORRECT CHARACTER LOCATION
   const checkForChar = (myChar) => {
     const myCharCoord = charCoord[myChar];
-    if (Math.abs(currImgCoord[0]-myCharCoord[0])<3.5 && Math.abs(currImgCoord[1]-myCharCoord[1])<3.5){
+    if (compareLocation(myCharCoord)) {
       console.log('Yay! You found ', myChar);
       let charCopy = [...char];
       charCopy = charCopy.filter((currChar) => currChar !== myChar);
@@ -70,7 +77,6 @@ const Game = (props) => {
 
   // GET COUNTER AND UPDATE LEADERBOARD
   const getCounter = (count) => {
-    console.log('counter: ', count);
     if (counter === 0){
       setCounter(count);
       // UPDATE SCORE TO LEADERBOARD

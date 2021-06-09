@@ -62,7 +62,6 @@ const LeaderBoard = (props) => {
         }
       }
     }
-    console.log('high score: ', myTime);
     setMyScore([myTime,myPlace]);
   }, [scores])
 
@@ -86,8 +85,9 @@ const LeaderBoard = (props) => {
         {images.map((img) => img)}
       </div>
       <div className="leaderboard-board">
-        <h2>{`${currType} ${currLevel}`}</h2>
+        <h2>{`${currType}-${currLevel}`}</h2>
         {myScore[0] !== -1 ? <h3>{`Your high score: ${myScore[0]}. Place: #${myScore[1]+1}`}</h3> : null}
+        <br/>
         <table>
           <tbody>
             <tr>

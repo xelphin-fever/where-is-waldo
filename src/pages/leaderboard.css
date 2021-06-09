@@ -27,6 +27,9 @@
   display: block;
   margin: 20px auto;
 }
+.leaderboard-board h2{
+  font-size: 45px;
+}
 .leaderboard-board table{
   width: 100%;
   border-spacing: 12px;

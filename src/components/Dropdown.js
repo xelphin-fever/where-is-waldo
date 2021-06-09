@@ -1,4 +1,5 @@
 import React, { useState, useEffect} from 'react';
+import icons from '../data/iconSrc.json';
 
 const Dropdown = (props) => {
 
@@ -21,7 +22,9 @@ const Dropdown = (props) => {
     <div className="dropdown" style={location}>
       {
         props.char.map((character) => {
-          return <div key={character} data-char={character} onClick={getClick}>{character}</div>
+          return <div key={character} data-char={character} onClick={getClick}>
+            <img src={icons[character]} alt={character}/> <h3>{character}</h3>
+          </div>
         })
       }
     </div>
