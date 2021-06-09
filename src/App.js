@@ -1,6 +1,6 @@
 import './App.css';
 import NavBar from './components/NavBar';
-import React, { useState, useEffect} from 'react';
+import React, { useEffect} from 'react';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Home from './pages/Home';
 import Game from './pages/Game';
@@ -40,9 +40,9 @@ function App() {
       <Router>
         <NavBar/>
         <Switch> 
-          <Route exact path='/' component={Home}/>
-          <Route exact path='/game/:id' component={() => <Game/>}/>
-          <Route exact path='/leaderboard' component={LeaderBoard}/>
+          <Route exact path='/where-is-waldo/' component={Home}/>
+          <Route exact path='/where-is-waldo/game/:id' component={() => <Game/>}/>
+          <Route exact path='/where-is-waldo/leaderboard' component={LeaderBoard}/>
         </Switch>
       </Router>
     </div>

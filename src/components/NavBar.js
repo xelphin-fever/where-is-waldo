@@ -28,10 +28,10 @@ const NavBar = (props) => {
       </div>
 
       <div className="navbar-group">
-        <Link to='/leaderboard'>
+        <Link to='/where-is-waldo/leaderboard'>
           <h2 className="navbar-element">🏆</h2>
         </Link>
-        <Link to='/'>
+        <Link to='/where-is-waldo/'>
           <h2 className="navbar-element">🏠</h2>
         </Link>
       </div>

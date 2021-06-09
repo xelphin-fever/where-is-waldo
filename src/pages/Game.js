@@ -8,7 +8,7 @@ import Timer from '../components/Timer';
 
 const Game = (props) => {
   // Get the Image Src
-  let match =useRouteMatch('/game/:id').url.split('/');
+  let match =useRouteMatch('/where-is-waldo/game/:id').url.split('/');
   match=match[match.length-1];
   const [type,level] =  match.split('-');
   const imgSrc = getAllImages()[type][level];
