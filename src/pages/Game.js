@@ -1,7 +1,7 @@
 import './game.css';
 import React, { useState, useEffect} from 'react';
 import { useRouteMatch } from "react-router-dom";
-import imageData from '../data/imgSrc.json';
+import {getAllImages} from '../helper/findImage';
 import firebase from '../firebase';
 import Dropdown from '../components/Dropdown';
 import Timer from '../components/Timer';
@@ -11,7 +11,7 @@ const Game = (props) => {
   let match =useRouteMatch('/game/:id').url.split('/');
   match=match[match.length-1];
   const [type,level] =  match.split('-');
-  const imgSrc = imageData[type][level];
+  const imgSrc = getAllImages()[type][level];
   // Game Variables
   const [charCoord, setCharCoord] = useState([]);
   const [char, setChar] = useState([]);
