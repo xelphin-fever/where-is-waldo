@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/where-is-waldo/static/css/main.98df7545.chunk.css",
+    "main.js": "/where-is-waldo/static/js/main.35cd9a43.chunk.js",
+    "main.js.map": "/where-is-waldo/static/js/main.35cd9a43.chunk.js.map",
+    "runtime-main.js": "/where-is-waldo/static/js/runtime-main.43c1162d.js",
+    "runtime-main.js.map": "/where-is-waldo/static/js/runtime-main.43c1162d.js.map",
+    "static/js/2.fe16650d.chunk.js": "/where-is-waldo/static/js/2.fe16650d.chunk.js",
+    "static/js/2.fe16650d.chunk.js.map": "/where-is-waldo/static/js/2.fe16650d.chunk.js.map",
+    "static/js/3.4a74d0ec.chunk.js": "/where-is-waldo/static/js/3.4a74d0ec.chunk.js",
+    "static/js/3.4a74d0ec.chunk.js.map": "/where-is-waldo/static/js/3.4a74d0ec.chunk.js.map",
+    "index.html": "/where-is-waldo/index.html",
+    "static/css/main.98df7545.chunk.css.map": "/where-is-waldo/static/css/main.98df7545.chunk.css.map",
+    "static/js/2.fe16650d.chunk.js.LICENSE.txt": "/where-is-waldo/static/js/2.fe16650d.chunk.js.LICENSE.txt",
+    "static/media/ghibli-0.58f2fa63.jpg": "/where-is-waldo/static/media/ghibli-0.58f2fa63.jpg",
+    "static/media/icon-azumarill.ce9151d2.png": "/where-is-waldo/static/media/icon-azumarill.ce9151d2.png",
+    "static/media/icon-charizard.8ce84303.png": "/where-is-waldo/static/media/icon-charizard.8ce84303.png",
+    "static/media/icon-dodou.63a4d88e.png": "/where-is-waldo/static/media/icon-dodou.63a4d88e.png",
+    "static/media/icon-electivire.74d6f67b.png": "/where-is-waldo/static/media/icon-electivire.74d6f67b.png",
+    "static/media/icon-gardevoir.12f93062.jpg": "/where-is-waldo/static/media/icon-gardevoir.12f93062.jpg",
+    "static/media/icon-howl.986a1e42.png": "/where-is-waldo/static/media/icon-howl.986a1e42.png",
+    "static/media/icon-odlaw.f34b5260.jpg": "/where-is-waldo/static/media/icon-odlaw.f34b5260.jpg",
+    "static/media/icon-ponyo.4d2cdab1.png": "/where-is-waldo/static/media/icon-ponyo.4d2cdab1.png",
+    "static/media/icon-waldo.1cc63b52.png": "/where-is-waldo/static/media/icon-waldo.1cc63b52.png",
+    "static/media/icon-wilma.5aea612d.jpg": "/where-is-waldo/static/media/icon-wilma.5aea612d.jpg",
+    "static/media/pokemon-0.fa9ae241.jpg": "/where-is-waldo/static/media/pokemon-0.fa9ae241.jpg",
+    "static/media/waldo-0.16820e8e.jpg": "/where-is-waldo/static/media/waldo-0.16820e8e.jpg",
+    "static/media/waldo-1.3f1472be.jpg": "/where-is-waldo/static/media/waldo-1.3f1472be.jpg",
+    "static/media/waldo-2.5c12dff6.jpg": "/where-is-waldo/static/media/waldo-2.5c12dff6.jpg",
+    "static/media/waldo-3.08c0df13.jpg": "/where-is-waldo/static/media/waldo-3.08c0df13.jpg",
+    "static/media/waldo-4.ea746537.jpg": "/where-is-waldo/static/media/waldo-4.ea746537.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.43c1162d.js",
+    "static/js/2.fe16650d.chunk.js",
+    "static/css/main.98df7545.chunk.css",
+    "static/js/main.35cd9a43.chunk.js"
+  ]
+}
